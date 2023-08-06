@@ -8,15 +8,15 @@ export function useAuthStore() {
     state: () => ({}),
     actions: {
       fetchUser() {
-        axiosInstance
-          .get(`/get_me`)
-          .then((res) => {
-            this.user = res.data;
-            this.loggedIn = true;
-          })
-          .catch((err) => {
-            console.log(err);
-          });
+        axiosInstance;
+        // .get(`/auth/me`)
+        // .then((res) => {
+        //   this.user = res.data;
+        //   this.loggedIn = true;
+        // })
+        // .catch((err) => {
+        //   console.log(err);
+        // });
       },
       logout() {
         localStorage.removeItem("token");

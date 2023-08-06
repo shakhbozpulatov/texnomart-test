@@ -4,6 +4,7 @@ import definePlugins from "./plugins";
 import VueAxios from "vue-axios";
 import axiosInstance from "./axios.js";
 import "./style.css";
+import "../public/bootstrap.min.css";
 import App from "./App.vue";
 
 const app = createApp(App);
